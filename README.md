@@ -12,4 +12,13 @@ Developed and designed a UI for an ECG and EMG signal monitoring using ReactJS a
 - Python
 
 # Interface Demo
+https://github.com/Hamza-Elghonemy/ECG-EMG-Monitor/assets/137107646/d87c5905-7371-4e14-8e32-e0b59a56f249
 
+# Team Members
+| Name |
+| --- |
+| Caroline Ehab |
+| Hamza Elghonemy |
+| Khadija Aly |
+| Moamen Ehab |
+| Mohamed Mostafa |
