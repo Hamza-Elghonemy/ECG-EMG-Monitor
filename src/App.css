@@ -1,0 +1,411 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #353941;
+    color: #9e9ea4;
+    font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
+  }
+
+.grid-container {
+    display: grid;
+    grid-template-rows: 0.2fr 3fr;
+    grid-template-areas:
+      'sidebar header header header'
+      'sidebar main main main';
+    height: 100vh;
+    width: 100%;
+  }
+
+
+  
+/* Header  */
+.header {
+    grid-area: header;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 30px 0 30px;
+    box-shadow: 0 6px 7px -3px rgba(0, 0, 0, 0.35);
+  }
+.menu-icon {
+    display: none;
+    font-size: 30px;
+  }
+.header-right {
+    display:flex;
+    justify-content: space-between;
+    width: 10%;
+    size: 30px;
+}
+.header-left > .ico{
+    display:flex;
+    justify-content: space-between;
+    width: 10%;
+    size: 30px;
+}
+/* End Header  */
+
+
+/* Sidebar  */
+#sidebar {
+    grid-area: sidebar;
+    height: 100%;
+    background-color: #515654;
+    overflow-y: auto;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+  }
+  
+  .sidebar-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px 0px 30px;
+    margin-bottom: 30px;
+  }
+  
+  .sidebar-title > span {
+    display: none;
+  }
+  
+  .sidebar-brand {
+    margin-top: 15px;
+    font-size: 20px;
+    font-weight: 700;
+  }
+  
+  .sidebar-list {
+    padding: 0;
+    list-style-type: none;
+  }
+  
+  .sidebar-list-item {
+    padding: 20px 20px 20px 20px;
+    font-size: 18px;
+  }
+  
+  .sidebar-list-item:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    cursor: pointer;
+  }
+  
+  .sidebar-list-item > a {
+    text-decoration: none;
+    color: #9e9ea4;
+  }
+  
+  .sidebar-responsive {
+    display: inline !important;
+    position: absolute;
+    /*
+      we want the z-index of the sidebar higher so that
+      the charts are not showing over the sidebar 
+      on small screens
+    */
+    z-index: 12 !important;
+  }
+  
+  /* End Sidebar  */
+
+  /* Main  */  
+
+.Parent {
+  display:flex;
+  width:100%;
+  overflow: hidden;
+  height: 1300px;
+}
+
+
+.main-container {
+    grid-area: main;
+    overflow-y: auto;
+    padding: 20px 20px;
+    color: #000;
+    width:100%;
+  }
+  
+  .main-title {
+    display: flex;
+    justify-content: center;
+    font-family: 'Lucida Console', sans-serif  ;
+    text-align: center;
+    /* padding: .7em 35%; */
+    font-size:50px;
+    /* width:100% */
+  }
+   
+  .main-cards {
+    display: grid;
+    /* grid-template-columns: 1fr 1fr 1fr 1fr; */
+    gap: 20px;
+    margin: 15px 30px 15px 0px;
+    width: 20%;
+  }
+
+  .main-cards1 {
+    display: grid;
+    grid-template-columns: 10fr 3fr;
+    gap: 10px;
+    margin: 15px 0px;
+    height: 30px;
+  }
+
+  .main-cards2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin: 15px 0px;
+    height: 30px;
+    padding-left: 450px;
+  }
+
+
+  .card1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 8px 15px;
+    border-radius: 5px;
+    width:500px;
+  }
+  
+  .card-inner1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 10px;
+  }
+  .card-inner1 > .card_icon {
+    font-size: 35px;
+    padding-left: 10px;
+  }
+
+  .card1:first-child {
+    background-color: #25365c;
+  }
+
+  .card1:nth-child(2) {
+    background-color: #25365c;
+  }
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 8px 15px;
+    border-radius: 5px;
+  }
+  
+  .card:first-child {
+    background-color: #393E46;
+  }
+  
+  .card:nth-child(2) {
+    background-color: #393E46;
+  }
+  
+  .card:nth-child(3) {
+    background-color: #393E46;
+  }
+  
+  .card:nth-child(4) {
+    background-color: #393E46;
+  }
+  
+  .card-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .card-inner > .card_icon {
+    font-size: 30px;
+  }
+  
+
+  .Parent-chart {
+    width: 100%;
+    /* padding-right: 6rem ; */
+  }
+
+  .charts {
+    display: grid;
+    /* grid-template-columns: 5fr 1fr; */
+    gap: 20px;
+    margin-top: 10px;
+    height: 500px;
+  }
+  
+  .chart2 {
+    display: grid;
+    /* grid-template-columns: 5fr 1fr; */
+    gap: 20px;
+    margin-top: 10px;
+    height: 500px;
+  }
+
+  h1{
+    font-size: 100px;
+    margin: 0 auto;
+  }
+
+  h2 {
+    color: white;
+  }
+
+  h3 {
+    font-size: 30px;
+    text-align: left;
+    
+  }
+  .d-flex {
+    display: flex;
+  }
+  
+  .justify-content-center {
+    justify-content: center;
+    padding-left: 50px;
+  }
+  .Patient-state{
+    color: #FA1E0E;
+  
+  }
+  .heart-rate{
+    color: #45e658;
+
+  }
+  
+  .humidity{
+   color: #94DAFF;
+ 
+
+  }
+  .temp{
+    color: #F0D9E7;
+    
+  }
+
+  .Peaks{
+    color: #eeeeee;
+  }
+  .Flexions{
+    color: #f5f5f5;
+  }
+  /* End Main  */
+
+
+  /* Medium <= 992px */
+  
+@media screen and (min-width: 992px) {
+    .grid-container {
+      grid-template-columns: 1fr;
+      grid-template-rows: 0.2fr 3fr;
+      grid-template-areas:
+        'header'
+        'main';
+     
+    }
+  
+    #sidebar {
+      display: none;
+    }
+  
+    .menu-icon {
+      display: inline;
+    }
+  
+    .sidebar-title > span {
+      display: inline;
+    }
+  }
+  /* Small <= 768px */
+    
+  @media screen and (max-width: 768px) {
+    .main-cards {
+      grid-template-columns: 1fr;
+      gap: 10px;
+      margin-bottom: 0;
+    }
+  
+    .charts {
+      grid-template-columns: 1fr;
+      margin-top: 30px;
+    }
+  }
+
+  @media screen and (max-width: 990px) {
+    .Parent{
+      flex-direction: column;
+    }
+    .main-cards{
+      width: 100%;
+    }
+  }
+  
+  /* Extra Small <= 576px */
+  
+  @media screen and (max-width: 576px) {
+    .hedaer-left {
+      display: none;
+    }
+  }
+  .App {
+    text-align: center;
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background-size: cover; /* This line makes the image cover the entire container */
+    background-position: center; /* This centers the image in the container */
+    background-repeat: no-repeat;
+    background-image: url(med.jpg);
+    
+    
+  }
+  
+  .auth-form-container, .login-form, .register-form {
+    display: flex;
+    flex-direction: column;
+    
+  }
+  
+  @media screen and (min-width: 600px) {
+    .auth-form-container {
+      padding: 5rem;
+      border: 1px solid rgb(252, 252, 252);
+      border-radius: 10px;
+      margin: 0.5rem;
+      background-image: linear-gradient(79deg, #4d05c9, #6f8dc6 48%, #049191);
+    }
+  }
+  
+  label {
+    text-align: left;
+    padding: 0.25rem 0;
+  }
+  
+  input {
+    margin: 0.5rem 0;
+    padding: 1rem;
+    border: none;
+    border-radius: 10px;
+  }
+  
+  button {
+    border: none;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    color: #7439db;
+  }
+  
+  .link-btn {
+    background: none;
+    color: white;
+    text-decoration: underline;
+  }
