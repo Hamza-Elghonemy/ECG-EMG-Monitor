@@ -1,0 +1,16 @@
+{
+  "name": "basic-socket",
+  "version": "0.0.1",
+  "description": "Communication between Arduino and HTML/JavaScript",
+  "dependencies": {
+    "@material-tailwind/react": "^2.1.9",
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "react-scripts": "^5.0.1",
+    "serialport": "^9.0.1",
+    "socket.io": "^2.0.4"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.1"
+  }
+}
